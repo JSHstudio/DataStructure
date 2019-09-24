@@ -14,10 +14,11 @@ public class 실습과제1_Main {
 	 * @Link https://github.com/JSHstudio/DataStructure
 	 */
 	public static void main(String[] args) {
-		String[] names = {"Rob", "Mike", "Rose", "Jill", "Jack", "Paul", "Bob"};
-	    int[] scores = {750, 1105, 590, 740, 610, 410, 840};
-
-		Scoreboard board = new Scoreboard(5);
+		String[] names = {"Rob", "Mike", "Rose", "Jill", "Jack", "Paul", "Bob","Jin","wook","Kim"};
+	    int[] scores = {750, 1105, 590, 740, 610, 410, 840,4000,1200000,99999999};
+	    int capacity = 4;
+	    
+		Scoreboard board = new Scoreboard(capacity);
 		for(int i=0;i<names.length;i++) {
 			GameEntry a = new GameEntry(names[i], scores[i]);
 			board.add(a);
@@ -29,5 +30,11 @@ public class 실습과제1_Main {
 		} catch (IndexOutOfBoundsException e) {
 			e.printStackTrace();
 		}	
+		
+		String str = "";
+		String set = "abc";
+		
+		PuzzleSolve p = new PuzzleSolve();
+		p.puzzleSolve(3, str, set);
 	}
 }
