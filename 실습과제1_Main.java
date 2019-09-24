@@ -1,10 +1,10 @@
-package ÀÚ·á±¸Á¶;
+package ìë£Œêµ¬ì¡°;
 
-public class ½Ç½À°úÁ¦1_Main {
+public class ì‹¤ìŠµê³¼ì œ1_Main {
 	/*
 	 * Scoreboard class
 	 * 
-	 * example of [½Ç½À°úÁ¦1] Array
+	 * example of [ì‹¤ìŠµê³¼ì œ1] Array
 	 * 
 	 * @author JSH
 	 * @license GNU General Public License v2.0
@@ -14,9 +14,9 @@ public class ½Ç½À°úÁ¦1_Main {
 	 * @Link https://github.com/JSHstudio/DataStructure
 	 */
 	public static void main(String[] args) {
-		String[] names = {"Rob", "Mike", "Rose", "Jill", "Jack", "Paul", "Bob","Jin","wook","Kim"};
-	    int[] scores = {750, 1105, 590, 740, 610, 410, 840,4000,1200000,99999999};
-	    int capacity = 4;
+		String[] names = {"Rob", "Mike", "Rose", "Jill", "Jack", "Paul", "Bob"};
+	    int[] scores = {750, 1105, 590, 740, 610, 410, 840};
+	    int capacity = 5;
 	    
 		Scoreboard board = new Scoreboard(capacity);
 		for(int i=0;i<names.length;i++) {
