@@ -1,4 +1,4 @@
-package 자료구조;
+package 진시훈_2018204006_과제1;
 
 /*
  * class for 순열(영어몰라서 한글 쓴거 아닙니다)
@@ -18,7 +18,7 @@ public class PuzzleSolve {
 			 * char 배열을 쓰레기값으로 초기화 할땐 무슨 값을 넣어야 하죠? 추가 바람.
 			 */
 //			System.out.println("S : " + S + ", temp : " + temp);
-			if (k == 1)	System.out.println(S);
+			if (k == 1 && U.length() == 0)	System.out.println(S);
 			else puzzleSolve(k - 1, S, U);
 			U = temp.concat(U);
 			S = S.replace(temp, "");

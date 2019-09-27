@@ -1,4 +1,4 @@
-package 자료구조;
+package 진시훈_2018204006_과제1;
 
 public class GameEntry {
 	private String name;
