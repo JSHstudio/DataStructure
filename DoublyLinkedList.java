@@ -1,4 +1,4 @@
-package Áø½ÃÈÆ_2018204006_°úÁ¦1;
+package ì§„ì‹œí›ˆ_2018204006_ê³¼ì œ1;
 
 public class DoublyLinkedList<E> {
 	private static class Node<E> {
@@ -77,12 +77,12 @@ public class DoublyLinkedList<E> {
 
 	public boolean add(E e) {
 		/*
-		 * ÀÌ ¸Å¼­µå´Â E°¡ GameEntryÀÎ°ÍÀ» °¡Á¤ÇÏ°í ÀÛµ¿ÇÑ´Ù.
+		 * ì´ ë§¤ì„œë“œëŠ” Eê°€ GameEntryì¸ê²ƒì„ ê°€ì •í•˜ê³  ì‘ë™í•œë‹¤.
 		 */
 		if(e.getClass() != GameEntry.class)
 			return false;
 		/*
-		 * ¾ÆÁ÷ list¿¡ ¾Æ¹«°Íµµ Ãß°¡ ¾È‰çÀ» °æ¿ì
+		 * ì•„ì§ listì— ì•„ë¬´ê²ƒë„ ì¶”ê°€ ì•ˆí•œ ê²½ìš°
 		 * size == 0
 		 */
 		if(size == 0) {
@@ -90,7 +90,7 @@ public class DoublyLinkedList<E> {
 			return true;
 		}
 		/*
-		 * ÀÏ¹İÀûÀÎ »óÈ²
+		 * ì¼ë°˜ì ì¸ ìƒí™©
 		 */
 		Node<E> temp = trailer.getPrev();
 		addBetween(e, trailer.getPrev(), trailer);
@@ -102,11 +102,11 @@ public class DoublyLinkedList<E> {
 		int newScore = ((GameEntry) e).getScore();
 		while (temp.getPrev() != null && ((GameEntry) temp.getElement()).getScore() < newScore) {
 			/*
-			 * Çö ³ëµå¿Í ÀÌÀü ³ëµå¸¦ ±³Ã¼ÇÑ´Ù.
-			 * Çö »óÈ²
+			 * í˜„ ë…¸ë“œì™€ ì´ì „ ë…¸ë“œë¥¼ êµì²´í•œë‹¤.
+			 * í˜„ ìƒí™©
 			 * prevNode -> temp -> newNode -> nextNode
 			 * 
-			 * ¹Ù²ğ »óÈ²
+			 * ë°”ë€” ìƒí™©
 			 * prevNode -> newNode -> temp -> nextNode
 			 */
 			prevNode = temp.getPrev();
@@ -124,7 +124,7 @@ public class DoublyLinkedList<E> {
 			
 			nextNode.setPrev(temp);
 			/*
-			 * temp°¡ ÀÌÀü ³ëµå¸¦ °¡¸®Å²´Ù
+			 * tempê°€ ì´ì „ ë…¸ë“œë¥¼ ê°€ë¦¬í‚¨ë‹¤
 			 */
 			temp = prevNode;
 		}
@@ -145,7 +145,7 @@ public class DoublyLinkedList<E> {
 	
 	public E remove(String str) {
 		/*
-		 * ÀÌ ¸Å¼­µå´Â E°¡ GameEntryÀÎ°ÍÀ» °¡Á¤ÇÏ°í ÀÛµ¿ÇÑ´Ù.
+		 * ì´ ë§¤ì„œë“œëŠ” Eê°€ GameEntryì¸ê²ƒì„ ê°€ì •í•˜ê³  ì‘ë™í•œë‹¤.
 		 */
 		Node<GameEntry> temp = (Node<GameEntry>) header.getNext();
 		Node<E> current = header.getNext();
@@ -161,7 +161,7 @@ public class DoublyLinkedList<E> {
 
 	public String toString(String str) {
 		/*
-		 * ÀÌ ¸Å¼­µå´Â E°¡ GameEntryÀÎ°ÍÀ» °¡Á¤ÇÏ°í ÀÛµ¿ÇÑ´Ù.
+		 * ì´ ë§¤ì„œë“œëŠ” Eê°€ GameEntryì¸ê²ƒì„ ê°€ì •í•˜ê³  ì‘ë™í•œë‹¤.
 		 */
 		String result = "";
 		result = result.concat("[DoyblyLinkedList] " + str + ": [");
@@ -188,9 +188,6 @@ public class DoublyLinkedList<E> {
 		Node<E> successor = node.getNext();
 		predecessor.setNext(successor);
 		successor.setPrev(predecessor);
-		/*
-		 * ³í¸®ÀûÀ¸·Î Á¦°ÅµÈ ³ëµå´Â ¾ÆÁ÷ »ì¾ÆÀÖ´Â ³ëµå ¾Æ´Ñ°¡?
-		 */
 		size--;
 		return node.getElement();
 	}
