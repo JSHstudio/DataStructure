@@ -46,7 +46,7 @@ public class 괴제1_Main {
 			System.out.println(doublyLinkedList.toString("removed"));
 		}
 		/*
-		* Permutation Start();
+		* Permutation Start;
 		*/
 		String str = "";
 		String set = "abc";

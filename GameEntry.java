@@ -1,4 +1,4 @@
-package Áø½ÃÈÆ_2018204006_°úÁ¦1;
+package JSH_2018204006_ê³¼ì œ1;
 
 public class GameEntry {
 	private String name;
