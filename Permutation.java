@@ -1,4 +1,4 @@
-package 진시훈_2018204006_과제1;
+package JSH_2018204006_과제1;
 
 /*
  * class for Permutation
