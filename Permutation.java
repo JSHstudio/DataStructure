@@ -14,7 +14,7 @@ public class Permutation {
 			U = U.replace(temp, "");
 			S = S.concat(temp);
 			if (k == 1 && U.length() == 0)	System.out.println(S);
-			else puzzleSolve(k - 1, S, U);
+			else permutation(k - 1, S, U);
 			U = temp.concat(U);
 			S = S.replace(temp, "");
 		}
