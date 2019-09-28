@@ -159,7 +159,7 @@ public class DoublyLinkedList<E> {
 		return current.getElement();
 	}
 
-	public String toString(String str) {
+public String toString(String str) {
 		/*
 		 * 이 매서드는 E가 GameEntry인것을 가정하고 작동한다.
 		 */
@@ -167,7 +167,7 @@ public class DoublyLinkedList<E> {
 		result = result.concat("[DoyblyLinkedList] " + str + ": [");
 		Node<GameEntry> node = (Node<GameEntry>) header.getNext();
 		while(node != trailer) {
-			result = result.concat("(" + node.getElement().getname()+", "+node.getElement().getScore()+")");
+			result = result.concat(node.getElement().toString());
 			if(node != trailer.getPrev())
 				result = result.concat(", ");
 			node = node.getNext();
