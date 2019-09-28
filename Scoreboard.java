@@ -47,7 +47,7 @@ public class Scoreboard {
 	private void print(String str) {
 		System.out.print("[Scoreboard] " + str + ": [");
 		for (int i = 0; i < numEntries; i++) {
-			System.out.print("(" + board.get(i).getname() + ", " + board.get(i).getScore() + ")");
+			System.out.print(board.get(i).toString());
 			if (i != numEntries - 1) {
 				System.out.print(", ");
 			}
