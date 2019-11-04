@@ -4,22 +4,22 @@ import java.util.Iterator;
 import java.util.PriorityQueue;
 
 public class Example1 {
-	// µ¥ÀÌÅÍ ¼±¾ğ
+	// ë°ì´í„° ì„ ì–¸
 	private final String[] employeeName = { "John", "Lisa", "Chris", "Angelina", "Bob" };
 	private final int[] employeeAge = { 31, 32, 32, 32, 31 };
 	private final int[] employeeSalary = { 100000, 115000, 145000, 110000, 100000 };
 
-	// ex1 º¯¼ö ¼³Á¤
+	// ex1 ë³€ìˆ˜ ì„¤ì •
 	PriorityQueue<Employee> PQ;
 	EmployeeComparator comparator = new EmployeeComparator();
 
 	Example1() throws Exception {
 		PQ = new PriorityQueue<Employee>(comparator);
-		// º¯¼ö ±æÀÌ È®ÀÎ
+		// ë³€ìˆ˜ ê¸¸ì´ í™•ì¸
 		if (!(employeeName.length == employeeAge.length && employeeName.length == employeeSalary.length)) {
 			throw new Exception("DataSetLenghtException");
 		}
-		// µ¥ÀÌÅÍ add
+		// ë°ì´í„° add
 		for (int i = 0; i < employeeName.length; i++) {
 			PQ.add(new Employee(employeeName[i], employeeAge[i], employeeSalary[i]));
 		}
