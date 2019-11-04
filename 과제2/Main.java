@@ -1,16 +1,6 @@
 package com.jsh.assignment2;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -32,7 +22,7 @@ public class Main {
 
 		
 		// Example2
-		Example2 ex2 = new Example2("./src/ÇÑ±¹¾ğ·ĞÁøÈïÀç´Ü_°øÀ¯°æÁ¦_°ü·Ã_±â»ç.txt");
+		Example2 ex2 = new Example2("./src/í•œêµ­ì–¸ë¡ ì§„í¥ì¬ë‹¨_ê³µìœ ê²½ì œ_ê´€ë ¨_ê¸°ì‚¬.txt");
 		try {
 			long start = System.currentTimeMillis();
 
@@ -41,7 +31,7 @@ public class Main {
 
 			long end = System.currentTimeMillis();
 
-			System.out.println("½ÇÇà¼Óµµ : " + (end - start) + "ms");
+			System.out.println("ì‹¤í–‰ì†ë„ : " + (end - start) + "ms");
 
 			for (int i = 0; i < list.size(); i++)
 				System.out.println(i + 1 + ". (" + list.get(i) + ", " + map.get(list.get(i)) + ")");
@@ -58,7 +48,7 @@ public class Main {
 
 			long end = System.currentTimeMillis();
 
-			System.out.println("\n½ÇÇà¼Óµµ : " + (end - start) + "ms");
+			System.out.println("\nì‹¤í–‰ì†ë„ : " + (end - start) + "ms");
 
 			for (int i = 0; i < list.size(); i++)
 				System.out.println(i + 1 + ". " + list.get(i));
